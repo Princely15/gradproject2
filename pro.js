@@ -8,3 +8,4 @@ let encryptedMessage = ""; // String (Changed when encoded)
 let decryptedMessage = ""; // String (Changed When Decoded)
 
 let isPartySafe = false; // Boolean 
+// New Changes //
