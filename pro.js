@@ -30,10 +30,10 @@ const shiftValue = randomInt + 3;
 
 let locationStart = "";
 
-if(emblemClue1 === "Eagle"){
+if(emblemClue1 === "Eagle") {
     locationStart = "Forum";
 }
-else if (emblemClue1 === "Lion"){
+else if (emblemClue1 === "Lion") {
     locationStart = "Coliseum";
 }
 else 
@@ -63,3 +63,16 @@ switch (emblemClue3)
         locationStart += "West"
         break
 }
+
+const guests = ['Anthony', 'Cicero', 'Cassius', 'Cleopatra'];
+    guests.unshift ('Brutus')
+    guests.push ('Augustus', 'Lucia');
+const spartacusIndex = guests.indexOf('Spartacus')
+const indexToRemove = guests.indexOf('Cassius');
+guests.splice (indexToRemove, 1);
+const specialGuests = guests.slice(0,3)
+
+const honoredGuests = guests.slice (0,1)
+const otherGuests = guests.slice(1)
+otherGuests.sort()
+const sortedGuests = honoredGuests.concat(otherGuests)
